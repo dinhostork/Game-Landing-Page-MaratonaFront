@@ -203,6 +203,12 @@ small {
       rgba(0, 0, 0, 1) 60%
     );
     padding-bottom: 100px;
+    display:flex;
+    justify-content: center;
+  }
+
+  .content{
+      justify-content: center;
   }
 
   .leftContainer {
