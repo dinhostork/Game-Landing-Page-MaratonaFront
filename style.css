@@ -1,0 +1,233 @@
+/* 
+* please note that this template is not completely responsive
+*/
+@font-face {
+  font-family: "ntailu";
+  src: url("./fonts/ntailu.ttf");
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/Hero.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: -160px;
+  font-family: "ntailu", Arial, sans-serif;
+  overflow: hidden;
+}
+
+section {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 60%
+  );
+  width: 100%;
+  height: 100%;
+}
+
+strong {
+  font-weight: bold;
+}
+h4 {
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  color: #f94141;
+}
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 120px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(255, 13, 13, 0.64);
+}
+
+small {
+  font-weight: bold;
+  color: #7b7676;
+}
+
+.content {
+  padding: 40px;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.topMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#moreMenu {
+  cursor: pointer;
+}
+.line {
+  border: white solid 2px;
+  border-radius: 8px;
+}
+
+.x2 {
+  width: 54px;
+  margin-bottom: 10px;
+}
+
+.x1 {
+  width: 30px;
+}
+
+#logo {
+  align-self: center;
+}
+.ticketButton {
+  width: 256px;
+  height: 49px;
+  font-size: 30px;
+  text-align: center;
+  background: transparent;
+  border: solid 1px #bb3231;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+.ticketButton:hover {
+  background: #bb3231;
+}
+
+.leftContainer {
+  align-self: flex-end;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.trailers {
+  margin-top: 60px;
+}
+.trailerTitle {
+  width: 100%;
+  border-bottom: #f94141 solid 4px;
+  border-radius: 4px;
+}
+
+.videos {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.video {
+  width: 346px;
+  height: 196px;
+  border: white solid 1px;
+  box-shadow: 5px 3px 3px 0px rgba(255, 13, 13, 0.44);
+}
+
+.video:first-child {
+  margin-right: 40px;
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .ticketButton {
+    width: auto;
+    font-size: 14px;
+  }
+  body {
+    background-size: cover;
+    background-position-x: -300px;
+    overflow-y: scroll;
+  }
+
+  h4 {
+    font-size: 17px;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  h1 {
+    font-size: 51px;
+  }
+
+  span {
+    font-size: 25px;
+  }
+  small {
+    display: none;
+  }
+  section {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 1) 60%
+    );
+    padding-bottom: 100px;
+  }
+
+  .leftContainer {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+    height: 100%;
+  }
+  .videos {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video {
+    width: auto;
+    height: auto;
+  }
+
+  .video:first-child {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+
+}
